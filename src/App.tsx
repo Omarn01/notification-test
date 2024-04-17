@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import './App.css'
+import Navigation from './components/navigation/Navigation'
 
 function App() {
   const notification = () => {
@@ -30,10 +31,14 @@ function App() {
 
   return (
     <div className='wrapper'>
-      <button onClick={() => notification()} className='button'>
-        Notification
-      </button>
-      <button onClick={() => timerNotification()}>Timer notification</button>
+      <header>
+        <button onClick={() => notification()} className='button'>
+          Notification
+        </button>
+        <button onClick={() => timerNotification()}>Timer notification</button>
+      </header>
+      <div className='content'>Content</div>
+      <Navigation />
     </div>
   )
 }
