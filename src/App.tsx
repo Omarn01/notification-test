@@ -29,7 +29,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className='wrapper'>
       <button onClick={() => notification()} className='button'>
         Notification
       </button>

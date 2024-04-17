@@ -5,3 +5,9 @@
   color: azure;
   font-weight: 600;
 }
+
+.wrapper {
+  display: flex;
+  flex: 1;
+  border: 1px solid blue;
+}
