@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import './App.css'
 
 function App() {
@@ -15,11 +16,24 @@ function App() {
     }
   }
 
+  useEffect(() => {
+    setTimeout(() => {
+      new Notification('HIii')
+    }, 2000)
+  }, [])
+
+  const timerNotification = () => {
+    setTimeout(() => {
+      new Notification('HIii')
+    }, 5000)
+  }
+
   return (
     <div>
       <button onClick={() => notification()} className='button'>
         Notification
       </button>
+      <button onClick={() => timerNotification()}>Timer notification</button>
     </div>
   )
 }
