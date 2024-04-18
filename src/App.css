@@ -12,13 +12,6 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.content {
-  border: 1px solid green;
-  height: 100%;
-}
-header {
-  border: 1px solid blue;
-}
 
 footer {
   border: 1px solid red;
