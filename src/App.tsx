@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import './App.css'
 import Navigation from './components/navigation/Navigation'
 import { Route, Routes } from 'react-router-dom'
